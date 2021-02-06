@@ -34,6 +34,7 @@ public class UserServiceImpl implements UserService{
             user.setEmail(signupRequest.get("email"));
             user.setMobile(signupRequest.get("mobile"));
             user.setPassword(signupRequest.get("password"));
+//            user.setCreated_at("2020-03-01 14:34:10");
             userRepo.save(user);
             return user;
         } catch (Exception e) {
