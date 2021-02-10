@@ -1,7 +1,9 @@
 package com.mvc.ecommerce.model;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Entity(name = "category")
 public class Category {
     @Id
     long id;

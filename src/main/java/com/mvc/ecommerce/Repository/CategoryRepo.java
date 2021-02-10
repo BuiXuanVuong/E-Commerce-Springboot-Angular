@@ -1,8 +1,10 @@
 package com.mvc.ecommerce.Repository;
 
-import com.mvc.ecommerce.model.Products;
+import com.mvc.ecommerce.model.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface CategoryRepo extends JpaRepository<Products, Long> {
+@Repository
+public interface CategoryRepo extends JpaRepository<Category, Long> {
 
 }
