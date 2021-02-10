@@ -1,5 +1,6 @@
 package com.mvc.ecommerce.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -11,6 +12,8 @@ public class AddtoCart {
     long product_id;
     int qty;
     double price;
+    long user_id;
+    @Column(updatable = false, insertable = false)
     String added_date;
 
     public long getId() {
@@ -51,5 +54,13 @@ public class AddtoCart {
 
     public void setAdded_date(String added_date) {
         this.added_date = added_date;
+    }
+
+    public long getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(long user_id) {
+        this.user_id = user_id;
     }
 }
